@@ -13,7 +13,29 @@ public class Planeta {
      boolean observable =false;
 
 
+    public Planeta(String nombre, int cantSatelites, double masa, double volumen, int diametro, int distanciamediaSol,
+            tipoPlaneta tipo, boolean observable) {
+        this.nombre = nombre;
+        this.cantSatelites = cantSatelites;
+        this.masa = masa;
+        this.volumen = volumen;
+        this.diametro = diametro;
+        this.distanciamediaSol = distanciamediaSol;
+        this.tipo = tipo;
+        this.observable = observable;
+    }
 
+
+void imprimir() {
+System.out.println("Nombre del planeta = " + nombre);
+System.out.println("Cantidad de satélites = " + cantSatelites);
+System.out.println("Masa del planeta = " + masa);
+System.out.println("Volumen del planeta = " + volumen);
+System.out.println("Diámetro del planeta = " + diametro);
+System.out.println("Distancia al sol = " + distanciamediaSol);
+System.out.println("Tipo de planeta = " + tipo);
+System.out.println("Es observable = " + observable);
+}
 
 
 }
